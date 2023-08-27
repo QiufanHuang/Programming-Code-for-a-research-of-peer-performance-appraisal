@@ -1,0 +1,142 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Questions {{ endblock }}
+
+{{ block content }}
+
+{{group.Group_label}}
+<p>   
+</p><p>   
+</p>
+
+{{if subsession.round_number == 1 }}
+<p> This is Round 1. <p>
+<p> Set A: <p>
+<p>1. Which of the following animals has the largest size? </p>
+<p>A. Rat    B. Squirrel    C. Hamster    D. Groundhog    E. Kangaroo</p>
+
+<p>2. During a trip that they took together, Carmen, Juan, Maria, and Rafael drove an average (arithmetic mean) of 80 miles each. Carmen drove 72 miles, Juan drove 78 miles, and Maria drove 83 miles. How many miles did Rafael drive? </p>
+<p>A. 87    B. 82    C. 85    D. 80    E. 89</p>
+
+<p>3. Each week, a clothing salesperson receives a commission equal to 15 percent of the first $500 in sales and 20 percent of all additional sales that week. What commission would the salesperson receive on total sales for the week of $1300? </p>
+<p>A. $195    B. $227    C. $235    D. $260    E. $335</p>
+
+<p>4. A certain restaurant that regularly advertises through the mail has 1,040 cover letters and 3,000 coupons in stock. In its next mailing, each envelope will contain 1 cover letters and 2 coupons. If all of the cover letters in stock are used, how many coupons will remain in stock after this mailing? </p>
+<p>A. 1960   B. 1040    C. 1500    D. 920    E. 2080</p>
+
+<p>5. Team A and Team B are competing against each other in a game of tug-of-war. Team A, consisting of 3 males and 3 females, decides to line up male, female, male, female, male, female. The lineup that Team A chooses will be one of how many different possible lineups? </p>
+<p>A. 9    B. 36    C. 15    D. 12    E. 72 </p>
+{{ endif }}
+
+{{ if subsession.round_number == 2 }}
+
+<p>Round 2: </p>
+<p>Set A: </p>
+<p>1. Which of the following products is not a product from Apple Inc.? </p>
+<p>A. iPhone    B. iPad    C. iWatch    D. iPod   E. iLoveU </p>
+<p>2. Over the past 7 weeks, the Smith family had weekly grocery bills of $74, $69, $64, $79, $64, $84, and $77. What was the Smiths’ average (arithmetic mean) weekly grocery bill over the 7-week period? </p>
+<p>A. $73    B. $70    C. $64    D. $74    E. $85</p>
+
+<p>3. During a recent storm ,9 neighbourhoods experienced power failures of durations 34,29,27,46,18,25,12,35, and 16 minutes, respectively. For these 9 neighbourhoods, what was the median duration, in minutes, of the power failures? </p>
+<p>A. 34    B. 29    C. 27    D. 25    E. 18</p>
+
+<p>4. A collection of 16 coins, each with a face value of either 10 cents or 25 cents, has a total face value of $2.35. How many of the coins have a face value of 25 cents? </p>
+<p>A. 11    B. 9    C. 7    D. 5    E. 3</p>
+
+<p>5. November 16, 2001, was a Friday. If each of the years 2004, 2008, and 2012 had 366 days, and the remaining years from 2001 through 2014 had 365 days, what day of the week was November 16, 2014? </p>
+<p>A. Saturday    B. Sunday    C. Tuesday    D. Wednesday    E. Thursday</p>
+{{ endif }}
+
+
+{{ if subsession.round_number == 3 }}
+
+<p>Round 3: </p>
+<p>Set A: </p>
+<p>1. When you are drinking milk, what’s the gender of the dairy cattle that produced the milk? </p>
+<p>A. a mixture of female and male   B. I don’t know    C. female or male    D. male    E. female</p>
+
+<p>2. While a family was away on vacation, they paid a neighbourhood boy $11 per week to mow their lawn and $4 per day to feed and walk their dog. If the family was away for exactly 3 weeks, how much did they pay the boy for his services? </p>
+<p>A. $117    B. $95    C. $85    D. $54    E. $45</p>
+
+<p>3. Last year $48,000 of a certain store’s profit was shared by its 2 owners and their 10 employees. Each of the 2 owners received 3 times as much as each of their 10 employees. How much did each owner receive from the $48,000? </p>
+<p>A. $12,000    B. $10,000    C. $9,000    D. $4,000    E. $3,000</p>
+
+<p>4. On a vacation, Rose exchanged $500.00 for euros at an exchange rate of 0.80 euro per dollar and spent 3/4 of the euros she received. If she exchanged the remaining euros for dollars at an exchange rate of $1.20 per euros, what was the dollar amount she received? </p>
+<p>A. $60    B. $80    C. $100    D. $120    E. $140 </p>
+
+
+<p>5. For the past n days, the average (arithmetic mean) daily production at a company was 50 units. If today’s production of 90 units raises the average to 55 units per day, what is the value of n? </p>
+<p>A. 11    B. 7    C. 10    D. 9    E. 13</p>
+{{ endif }}
+
+{{chat nickname=player.player_nickname}}
+{{ if subsession.round_number == 1 }}
+
+<p>Set B: </p>
+<p>1. Which of the following characters is not from Earth? </p>
+<p>A. Iron Man    B. Batman    C. Ant-man    D. Spider-Man    E. Superman</p>
+
+<p>2. The price of a coat in a certain store is $500. If the price of the coat is to be reduced by $150, by what percent is the price to be reduced? </p>
+<p>A. 30%    B. 15%    C. 20%    D. 25%    E. 10%</p>
+
+<p>3. If y is the smallest positive integer such that 3,150 multiplied by y is the square of an integer, then y must be</p>
+<p>A. 2    B. 5    C. 14    D. 7    E. 6</p>
+
+<p>4. A border of uniform width is placed around a rectangular photograph that measures 8 inches by 10 inches. If the area of the border is 144 square inches, what is the width of the border, in inches? </p>
+<p>A. 3    B. 4    C. 8    D. 6    E. 9</p>
+
+<p>5. In a stack of cards, 9 cards are blue and the rest are red. If 2 cards are to be chosen at random from the stack without replacement, the probability that the cards chosen will both be blue is 6/11. What is the number of cards in the stack? </p>
+<p>A. 10    B. 12    C. 11    D. 15    E. 18</p>
+
+
+{{ endif }}
+
+{{ if subsession.round_number == 2 }}
+
+<p>Set B: </p>
+<p>1. What’s the number bigger than 10086 that is a multiple of 7? </p>
+<p>A. 10091    B. 10090 C. 10089    D. 10088    E.10087</p>
+
+<p>2. Bouquets are to be made using white tulips and red tulips, and the ratio of the number of white tulips to the number of red tulips is to be the same in each bouquet. If there are 15 white tulips and 85 red tulips available for the bouquets, what is the greatest number of bouquets that can be made using all the tulips available? </p>
+<p>A. 5    B. 3    C. 8    D. 10    E. 13</p>
+
+<p>3.  How many prime numbers between 1 and 100 are factors of 7,150? </p>
+<p>A. 6    B. 5    C. 4    D. 3    E. 2</p>
+
+<p>4. Of the 300 subjects who participated in an experiment using virtual-reality therapy to reduce their fear of heights, 40 percent experienced sweaty palms, 30 percent experienced vomiting, and 75 percent experienced dizziness. If all of the subjects experienced at least one of these effects and 35 percent of the subjects experienced exactly two of these effects, how many of the subjects experienced only one of these effects? </p>
+<p>A. 105    B. 125    C. 130    D. 180    E. 195</p>
+
+<p>5. Rita and Sam play the following game with n sticks on a table. Each must remove 1,2,3, 4 or 5 sticks at a time on alternate tums, and no stick that is removed is put back on the table. The one who removes the last stick (or sticks) from the table wins. If Rita goes first, which of the following is a value of n such that Sam can always win no matter how Rita plays? </p>
+<p>A. 16    B. 12    C. 11    D. 10    E. 7</p>
+{{ endif }}
+
+
+{{ if subsession.round_number == 3 }}
+
+<p>Set B: </p>
+<p>1. Which of the following options is not a planet in solar system? </p>
+<p>A. Earth    B. Saturn    C. Jupiter    D. Mercury    E. Sun</p>
+
+<p>2. In the xy-coordinate plane, if the point (0, 2) lies on the graph of the line 2x+ky =4, what is the value of the constant k? </p>
+<p>A. 2    B. 1    C. 0    D. -1    E. -2</p>
+
+<p>3. Of the 150 houses in a certain development, 60 percent have air-conditioning, 50 percent have a sunporch, and 30 percent have a swimming pool. If 5 of the houses have all three of these amenities and 5 have none of them, how many of the houses have
+exactly two of these amenities? </p>
+<p>A. 10    B. 45    C. 55    D. 60    E. 65</p>
+
+<p>4. Club X has more than 10 but fewer than 40 members. Sometimes the members sit at tables with 3 members at one table and 4 members at each of the other tables, and sometimes they sit at tables with 3 members at one table and 5 members at each of the other tables. If they sit at tables with 6 members at each table except one and fewer than 6 members at that one table, how many members will be at the table that has fewer than 6 members? </p>
+<p>A. 1    B. 2    C. 3    D. 5    E. 7</p>
+
+<p>5. Let S be the set of all positive integers having at most 4 digits and such that each of the digits is 0 or 1 What is the greatest prime factor of the sum of all the numbers in S? </p>
+<p>A. 59    B. 101    C. 37    D. 11    E. 19</p>
+{{ endif }}
+
+<p>   
+</p>
+<p>   
+</p>
+Please select your answers here. 
+{{ formfields }}
+
+{{ next_button }}
+
+{{ endblock }}

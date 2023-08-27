@@ -1,0 +1,26 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Appraisal{{ endblock }}
+
+{{ block content }}
+
+{{group.Group_label}}
+<p>   
+</p>
+<p>   
+</p>
+You have <b>{{player.score}}</b> correct answers 
+and your teammate has <b>{{player.teammate_score}} </b>correct answers. 
+<p>   
+</p>
+Together, your Group bonus is <b>{{group.group_bonus}}</b> yuan.
+<p>   
+</p>
+Please recall your teammates' performance and cooperative behaviours and do the appraisal below. 1 is the lowest; 10 is the highest.
+<p>   
+</p>
+
+{{ formfields }}
+
+{{ next_button }}
+
+{{ endblock }}

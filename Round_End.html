@@ -1,0 +1,17 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Round End{{ endblock }}
+
+{{ block content }}
+
+Your game for this round is over. Please click Next button for next round.
+
+{{ if subsession.round_number == 3 }}
+Thanks for your participation in this experiment! You have done all the rounds! 
+If your overall bonus is above the average level, you will be contacted when the experiment has collected all the data. Please enter your email below.
+{{ formfields }}
+
+{{ endif }}
+
+{{ next_button }}
+
+{{ endblock }}

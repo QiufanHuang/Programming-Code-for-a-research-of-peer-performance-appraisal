@@ -1,0 +1,33 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Questionnaire after the game. {{ endblock }}
+
+{{ block content }}
+
+{{group.Group_label}}
+<p>   
+</p>
+<p>   
+</p>
+Congradualations! You have finished the Game with your Teammate!
+<p>   
+</p>
+You have <b>   {{player.score}} </b> correct answers 
+and your teammate has<b>   {{player.teammate_score}} </b>  correct answers. 
+<p>   
+</p>
+Your teammate gives you a mark of <b>  {{player.teammate_rate}}  </b>!
+<p>   
+</p>
+Together, your Group bonus is <b> {{group.group_bonus}}   </b>yuan.
+<p> 
+Your final share of the group bonus is<b> {{player.player_gain}}  </b> Yuan!  It's <b>  {{player.player_percentage}}%  </b> of the group bonus!   
+<p>   
+</p>
+Please answer a few questions:
+<p>You should enter a value from 1 to 10 for each question.1 is the lowest; 10 is the highest.  
+</p>
+{{ formfields }}
+
+{{ next_button }}
+
+{{ endblock }}

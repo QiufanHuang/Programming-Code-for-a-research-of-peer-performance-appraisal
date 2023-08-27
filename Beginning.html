@@ -1,0 +1,28 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Beginning{{ endblock }}
+
+{{ block content }}
+
+{{group.Group_label}}
+<p>   
+</p>
+<p>   
+</p>
+
+
+<p>Please have a chat in the chat box with your teammate to choose the set of questions.</p>
+<p>Set A is easier, set B is more difficult.You should reach an agreement before you click the "next" button. </p>
+<p>You will be able to see both set of questions in the next page. 
+And you will be able to help each other by chatting. At the end, <b>please only select the answers for your set of questions that you selected here!!!!!!<b>
+    </p>
+    <p>   
+</p>
+<p>The group reward is based on how many correct answers are given by you two together. So,if you finish your set of question early, ask your teammate if you can help him answer some quesitions!     
+    </p> 
+{{chat nickname=player.player_nickname}}
+
+{{ formfields }}
+
+{{ next_button }}
+
+{{ endblock }}
